@@ -1,0 +1,50 @@
+.btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+
+    display: flex;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    background: #315efb;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0px 2px 8px 2px rgba(141, 150, 178, 0.3);
+    transform: scale(1.05);
+}
+
+.btn_text {
+    margin-right: 10px;
+}
+
+.wrapper {
+    display: grid;
+    width: 40vw;
+    grid-template: 6vh 50vh / 3fr 1fr 1fr;
+    padding: 0.2rem;
+    gap: 0.2rem;
+}
+
+.wrapper > input,
+button,
+.dialog {
+    border: 4px solid rgb(87, 87, 191);
+}
+
+.dialog {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
